@@ -1,0 +1,1448 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "Shaman",
+                "abbreviation": "SHM",
+                "full": "Shaman",
+                "authors": [
+                    "Outofideas"
+                ],
+                "convertedBy": [
+                    "Outofideas"
+                ],
+                "version": "1.0.0",
+                "url": "https://homebrewery.naturalcrit.com/share/fkAVpz2PdLci",
+                "targetSchema": "1.0.0"
+            }
+        ],
+        "dateAdded": 1687985032,
+        "dateLastModified": 1713958692,
+        "_dateLastModifiedHash": "a041b0eb15"
+    },
+    "class": [
+        {
+            "name": "Shaman",
+            "source": "KurtsBookOfFuck",
+            "classFeatures": [
+                "Spellcasting|Shaman|Shaman|1",
+                "Channel Nature|Shaman|Shaman|1",
+                "Spiritual Summons|Shaman|Shaman|1",
+                "Shamanic Aura|Shaman|Shaman|2",
+                {
+                    "classFeature": "Mystical Union|Shaman|Shaman|3",
+                    "gainsubclassFeatures": true
+                },
+                "Feat|Shaman|Shaman|4",
+                "Spiritual Potency|Shaman|Shaman|5",
+                "Shamanic Spirits (2)|Shaman|Shaman|5",
+                {
+                    "classFeature": "Mystical Union Feature|Shaman|Shaman|6",
+                    "gainsubclassFeatures": true
+                },
+                "Dual Aspect|Shaman|Shaman|7",
+                "Shifting Auras|Shaman|Shaman|7",
+                "Feat|Shaman|Shaman|8",
+                "Spiritual Wardens|Shaman|Shaman|9",
+                {
+                    "classFeature": "Mystical Union Feature|Shaman|Shaman|10",
+                    "gainsubclassFeatures": true
+                },
+                "Entangled Egos|Shaman|Shaman|11",
+                "Shamanic Spirits (3)|Shaman|Shaman|11",
+                "Feat|Shaman|Shaman|12",
+                "Soul Weaver|Shaman|Shaman|13",
+                {
+                    "classFeature": "Mystical Union Feature|Shaman|Shaman|14",
+                    "gainsubclassFeatures": true
+                },
+                "Sight of the Third Eye|Shaman|Shaman|15",
+                "Epic Boon|Shaman|Shaman|16",
+                "Shamanic Spirits (2)|Shaman|Shaman|17",
+                "Spirits' Favour|Shaman|Shaman|18",
+                "Epic Boon|Shaman|Shaman|19",
+                "One With All|Shaman|Shaman|20"
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "wis",
+                "cha"
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "{@item light armor|phb}",
+                    "{@item medium armor|phb}",
+                    "{@item shield|phb}"
+                ],
+                "weapons": [
+                    "{@item simple weapons|phb}",
+                    "{@item blowgun|phb}",
+                    "{@item scimitar|phb}"
+                ],
+                "tools": [
+                    "{@item poisoners' kit|phb}",
+                    "{@item herbalists' kit|phb}"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "animal handling",
+                                "arcana",
+                                "insight",
+                                "investigation",
+                                "medicine",
+                                "nature",
+                                "perception",
+                                "Persuasion",
+                                "religion",
+                                "survival"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    " 2 {@filter dagger|phb}s",
+                    " a {@item staff|phb}",
+                    " a {@item herbalist kit|phb}",
+                    " {@item studded leather|phb} armour",
+                    " a wooden {@item staff|phb}",
+                    " a wooden {@item shield|phb}",
+                    "an {@item explorer's pack|phb}"
+                ],
+                "defaultData": [
+                    {
+                        "a": [
+                            "quarterstaff|phb"
+                        ],
+                        "b": [
+                            "dagger|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "component pouch|phb"
+                        ],
+                        "b": [
+                            "arcane focus|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            "explorer's pack|phb",
+                            "dungeoneer's pack|phb"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "cha or wis": 13
+                },
+                "proficienciesGained": {
+                    "armor": [
+                        {
+                            "Light Armor": true
+                        }
+                    ],
+                    "tools": [
+                        "a {@item herbalist's kit|phb}"
+                    ]
+                },
+                "entries": [
+                    "For the purpose of multiclassing and spell slots, you are a half-caster (like {@class paladin} or {@class ranger})."
+                ]
+            },
+            "spellcastingAbility": "Cha",
+            "casterProgression": "half",
+            "cantripProgression": [
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "spellsKnownProgression": [
+                2,
+                2,
+                3,
+                3,
+                6,
+                6,
+                7,
+                7,
+                9,
+                9,
+                10,
+                10,
+                11,
+                11,
+                12,
+                12,
+                14,
+                14,
+                15,
+                15
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Spells Known"
+                    ],
+                    "rows": [
+                        [
+                            2
+                        ],
+                        [
+                            2
+                        ],
+                        [
+                            3
+                        ],
+                        [
+                            3
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            9
+                        ],
+                        [
+                            9
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            11
+                        ],
+                        [
+                            11
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            15
+                        ],
+                        [
+                            15
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "colLabels": [
+                        "{@filter Cantrips|spells|level=0|class=shaman (shm)}",
+                        "{@filter 1st|spells|level=1|class=shaman (shm)}",
+                        "{@filter 2nd|spells|level=2|class=shaman (shm)}",
+                        "{@filter 3rd|spells|level=3|class=shaman (shm)}",
+                        "{@filter 4th|spells|level=4|class=shaman (shm)}",
+                        "{@filter 5th|spells|level=5|class=shaman (shm)}"
+                    ],
+                    "rows": [
+                        [
+                            2,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            4,
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            1,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ],
+                        [
+                            4,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2
+                        ]
+                    ]
+                }
+            ],
+            "subclassTitle": "Shaman Mystical Union",
+            "classSpells": [
+                "Acid Splash",
+                "Control Flames",
+                "Create Bonfire",
+                "Dancing Lights",
+                "Druidcraft",
+                "Elementalism",
+                "Fire Bolt",
+                "Friends",
+                "Frostbite ",
+                "Green-Flame Blade",
+                "Guidance",
+                "Gust",
+                "Light",
+                "Lightning Lure",
+                "Message",
+                "Mold Earth",
+                "Poison Spray",
+                "Primal Savagery",
+                "Produce Flame",
+                "Ray of Frost",
+                "Shape Water",
+                "Spare the Dying",
+                "Thaumaturgy",
+                "Thunderclap",
+                "Upheaval",
+                "Absorb Elements",
+                "Bane",
+                "Bless",
+                "Burning Hands",
+                "Command",
+                "Comprehend Languages",
+                "Create or Destroy Water",
+                "Cure Wounds",
+                "Detect Magic",
+                "Detect Poison and Disease",
+                "Earth Tremor",
+                "Find Familiar",
+                "Fog Cloud",
+                "Frost Fingers",
+                "Ice Knife",
+                "Protection from Evil and Good",
+                "Purify Food and Drink",
+                "Sanctuary",
+                "Speak with Animals",
+                "Thunderwave",
+                "Witch Bolt",
+                "Aid",
+                "Animal Messenger",
+                "Augury",
+                "Barkskin",
+                "Blindness/Deafness",
+                "Blur",
+                "Borrowed Knowledge",
+                "Continual Flame",
+                "Darkness",
+                "Detect Thoughts",
+                "Earthbind",
+                "Enhance Ability",
+                "Enlarge/Reduce",
+                "Find Steed",
+                "Healing Spirit",
+                "Hold Person",
+                "Invisibility",
+                "Magic Weapon",
+                "Maximilian's Earthen Grasp",
+                "Misty Step",
+                "Moonbeam",
+                "Pass without Trace",
+                "Pyrotechnics",
+                "Ray of Enfeeblement",
+                "Rime's Binding Ice",
+                "See Invisibility",
+                "Shatter",
+                "Silence",
+                "Skywrite",
+                "Spiritual Weapon",
+                "Summon Beast",
+                "Warding Bond",
+                "Warding Wind",
+                "Wither and Bloom",
+                "Ashardalon's Stride",
+                "Aura of Vitality",
+                "Blink",
+                "Call Lightning",
+                "Conjure Animals",
+                "Counterspell",
+                "Create Food and Water",
+                "Dispel Magic",
+                "Elemental Weapon",
+                "Erupting Earth",
+                "Life Transference",
+                "Lightning Bolt",
+                "Magic Circle",
+                "Mass Healing Word",
+                "Nondetection",
+                "Protection from Energy",
+                "Remove Curse",
+                "Revivify",
+                "Sending",
+                "Slow",
+                "Speak with Dead",
+                "Speak with Plants",
+                "Spirit Guardians",
+                "Spirit Shroud",
+                "Summon Fey",
+                "Summon Lesser Demons",
+                "Summon Shadow",
+                "Summon Undead",
+                "Tongues",
+                "Wall of Sand",
+                "Aura of Life",
+                "Aura of Purity",
+                "Banishment",
+                "Conjure Minor Elementals",
+                "Elemental Bane",
+                "Freedom of Movement",
+                "Locate Creature",
+                "Shadow of Moil",
+                "Stone Shape",
+                "Summon Aberration",
+                "Summon Construct",
+                "Summon Greater Demon",
+                "Circle of Power",
+                "Conjure Elemental",
+                "Conjure Woodland Beings",
+                "Contact Other Plane",
+                "Creation",
+                "Dispel Evil and Good",
+                "Immolation",
+                "Legend Lore",
+                "Mass Cure Wounds",
+                "Planar Binding",
+                "Rary's Telepathic Bond",
+                "Reincarnate",
+                "Scrying",
+                "Summon Celestial",
+                "Summon Draconic Spirit",
+                "Conjure Fey",
+                "Conjure Celestial"
+            ],
+            "hasFluff": true
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Spellcasting",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 1,
+            "entries": [
+                "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "you know a number of Cantrips from the Shaman Spell List as shown in the Cantrips Known column of the shaman table for your level.."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "entries": [
+                        "The shaman table shows how many spell slots you have to cast your shaman spells of 1st level and higher. To cast one of these shaman spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Preparing Spells",
+                    "entries": [
+                        "You prepare the list of shaman spells that are available for you to cast, choosing from the {@filter Shaman spell list|spells|class=Shaman (shm)}.",
+                        "TWhen you do so, choose a number of shaman spells equal to the number of spell slots you have, as shown for your level in the Shaman Table.."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spellcasting Ability",
+                    "entries": [
+                        "Wisdom or Charisma (your choice) is your spellcasting ability for your shaman spells. You use this ability whenever a spell or feature refers to your spellcasting ability. In addition, you use your Spellcasting Ability modifier when setting the saving throw DC for a shaman spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "Wis"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "Wis"
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Focus",
+                            "page": 3,
+                            "entries": [
+                                "You can use an {@item druidic focus} as a spellcasting for your shaman spells. See chapter 5, \"Equipment\" in the Player's Handbook for various druidic focus options."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channel Nature",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 1,
+            "entries": [
+                "At 1st level, The magic of spirits infuses you. Tapping into that power, you can invoke various magical effects. You can expend a use of this feature to use one of the following abilities: Healing Blossoms, or Shamanic Spirits. You have a total number of uses of this feature equal to your Shaman Bonus, as shown on the Shaman table. You regain one expended use when you finish a short rest, and all expended uses when you finish a long rest.",
+                {
+                    "type": "inset",
+                    "name": "Healing Blossoms",
+                    "entries": [
+                        "Choose a point within 30 feet of yourself, and spectral flowers appear for a moment in a 10-foot-radius sphere centered on that point. Then roll a number of d4s equal to your Shaman Bonus, and add the dice together. The total is the number of Hit Points you can distribute to creatures in that sphere. You decide the number of Hit Points that are restored to each of those creatures, deducting the healing from the total."
+                    ]
+                },
+                {
+                    "type": "inset",
+                    "name": "Shamanic Spirits",
+                    "entries": [
+                        "As an action, you summon a Shamanic Spirit, which uses the Shamanic Spirit stat block listed below. On your turn, you can use your bonus action to command all of your active Shamanic Spirits summoned through this feature to take an action and/or use their movement. If you do not do so, they will all take the dodge action at the end of your turn and nothing else. At later levels, using this feature summons more spirits, summoning 2 at 5th level, 3 at 11th level, and 4 at 17th level."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shamanic Aura",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 2,
+            "entries": [
+                "At 2nd level, your connection to the world around you becomes reciprocal, and you channel the power of your spirituality into an aura. You know a number of Auras equal to your Shaman Bonus from the {@filter Shamanic Aura|optionalFeature|feature type=SA|source=KurtsBookOfFuck} section of this Class. You always have one of your Auras active. As an action, you can change which aura you have active from the ones that you know. You can choose to change your active aura this way a number of times equal to your Shaman bonus. Once expended, your ability to change auras is regained when you finish a long rest.",
+                "Your active auras are active so long as you are not incapacitated or dead. If you are incapacitated or dead and then become neither incapacitated or dead, your last active aura becomes active.",
+                "The radius of your Aura in feet is 5 times your Shaman bonus."
+            ]
+        },
+        {
+            "name": "Mystical Union",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 3,
+            "entries": [
+                "When you reach 3rd level, you choose your Mystical Union. Each Union has its own unique features as well as its own unique Shamanic Auras which you can only access via progressing into your chosen Union."
+            ]
+        },
+        {
+            "name": "Feat",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you gain a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Spiritual Potency",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 1,
+            "entries": [
+                "From 5th level, your channel nature features grow in potency in the following ways:",
+                {
+                    "type": "inset",
+                    "name": "Healing Blossoms",
+                    "entries": [
+                        "You add an additional number of dice to your pool equal to 1/4 your shaman level (rounded up)."
+                    ]
+                },
+                {
+                    "type": "inset",
+                    "name": "Shamanic Spirits",
+                    "entries": [
+                        "When your spirits make an ability check, saving throw, or damage roll, you add your Spellcasting ability modifier to the total."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mystical Union Feature",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your Mystical Union."
+            ]
+        },
+        {
+            "name": "Spiritual Potency",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 7,
+            "entries": [
+                "From 7th level, you can weave between your various Aruas. When you finish a short rest, you can swap your active aura for without expending your ability to do so. Additionally, when you do swap your active aura, you can choose to do so as a bonus action."
+            ]
+        },
+        {
+            "name": "Feat",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Spiritual Wardens",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 9,
+            "entries": [
+                "From 9th level, While you are Incapacitated, your spirits do not return to their native plane - rather, they take their turn during your turn and prioritise protecting you while you are incapacitated."
+            ]
+        },
+        {
+            "name": "Mystical Union Feature",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain a feature granted by your Mystical Union."
+            ]
+        },
+        {
+            "name": "Entangled Egos",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 11,
+            "entries": [
+                "At 11th level, you can cast the spell {@5etools Scrying|Spells.html} once per long rest without expending a spell slot. When you do so, you can choose to allow the target to know that the spell is being cast on them and force the saving throw to fail. If you choose to do this, the target also gains the benefits of having cast the same spell on you, and you can communicate together."
+            ]
+        },
+        {
+            "name": "Feat",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Additional Malediction",
+            "source": "BloodMage",
+            "className": "Blood Mage",
+            "classSource": "BloodMage",
+            "page": 3,
+            "level": 13,
+            "entries": [
+                "tarting at 13th level, you can pluck at the vulnerabilities of a creature’s soul. when you deal damage to a creature, you can force them to make a Wisdom saving throw. If the target fails, you can use your reaction to reduce a d20 roll they make by an amount equal to your Shaman Bonus, so long as the creature is within your Shamanic Aura. This benefit lasts for one minute or until you use this feature again on a different target. On a successful save, the creature is unaffected.",
+                "You can use your reaction to reduce a creature's d20 rolls this way a total number of times equal to your Spellcasting Ability Modifier. You regain all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Mystical Union Feature",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain a feature granted by your Mystical Union."
+            ]
+        },
+        {
+            "name": "Sight of the Third Eye",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "page": 3,
+            "level": 15,
+            "entries": [
+                "Starting at 15th level, you gain Truesight within your Shamanic Aura."
+            ]
+        },
+        {
+            "name": "Epic Boon",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can choose to take a {@5etools feat|feats.html} or an epic {@5etools Boon|rewards.html}."
+            ]
+        },
+        {
+            "name": "Spirits' Favour",
+            "source": "BloodMage",
+            "className": "Blood Mage",
+            "classSource": "BloodMage",
+            "page": 3,
+            "level": 18,
+            "entries": [
+                "From 18th level, any Shamanic Spirits you have active have an aura equal in size and in its effect to your own Shamanic Aura.",
+                "Additionally, you gain a bonus to all saving throws equal to the number of Shamanic spirits you have active."
+            ]
+        },
+        {
+            "name": "Epic Boon",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can choose to take a {@5etools feat|feats.html} or an epic {@5etools Boon|rewards.html}."
+            ]
+        },
+        {
+            "name": "Profane Recovery",
+            "source": "KurtsBookOfFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "level": 20,
+            "entries": [
+                "At 20th level, all of your known auras are permanantly active, unless you are dead. Additionally, you can use your Dual Aspect feature to grant yourself one additional active aura which you otherwise do not know."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Union of the Cosmos",
+            "source": "KurtsBookofFuck",
+            "shortName": "Cosmos",
+            "subclassFeatures": [
+                "Union of the Cosmos|Shaman|Shaman|Cosmos|Shaman|3",
+                "Star Gazing|Shaman|Shaman|Cosmos|BloodMage|3",
+                "Eclipse|Shaman|Shaman|Cosmos|BloodMage|3",
+                "Star Struck|Blood Mage|Shaman|Shaman|Cosmos|Shaman|6",
+                "Cosmic Power||Shaman|Shaman|Cosmos|Shaman|10",
+                "Supernova|Shaman|Shaman|Cosmos|Shaman|14"
+            ],
+            "className": "Shaman",
+            "classSource": "Shaman"
+        },
+        {
+            "name": "Union of the Hearth",
+            "source": "KurtsBookofFuck",
+            "shortName": "Hearth",
+            "subclassFeatures": [
+                "Union of the Hearth|Shaman|Shaman|Hearth|Shaman|3",
+                "Heart of Fire|Shaman|Shaman|Hearth|BloodMage|3",
+                "Greater Rest|Shaman|Shaman|Hearth|BloodMage|3",
+                "Protection of the Hearth|Blood Mage|Shaman|Shaman|Hearth|Shaman|6",
+                "Familial Bond||Shaman|Shaman|Hearth|Shaman|10",
+                "Homemade Feast|Shaman|Shaman|Hearth|Shaman|14",
+                "Healing Hearth|Shaman|Shaman|Hearth|Shaman|14"
+            ],
+            "className": "Shaman",
+            "classSource": "Shaman"
+        },
+        {
+            "name": "Union of the Primeval",
+            "source": "KurtsBookofFuck",
+            "shortName": "Cosmos",
+            "subclassFeatures": [
+                "Union of the Primeval|Shaman|Shaman|Cosmos|Shaman|3",
+                "Natural Wonders|Shaman|Shaman|Cosmos|BloodMage|3",
+                "Fury of the Elements|Shaman|Shaman|Cosmos|BloodMage|3",
+                "Extreme Survivor|Blood Mage|Shaman|Shaman|Cosmos|Shaman|6",
+                "Hidden Guardian|Blood Mage|Shaman|Shaman|Cosmos|Shaman|6",
+                "Elemental attunement||Shaman|Shaman|Cosmos|Shaman|10",
+                "Nature’s Wrath|Shaman|Shaman|Cosmos|Shaman|14"
+            ],
+            "className": "Shaman",
+            "classSource": "Shaman"
+        },
+        {
+            "name": "Union of Passion",
+            "source": "KurtsBookofFuck",
+            "shortName": "Passion",
+            "subclassFeatures": [
+                "Union of Passion|Shaman|Shaman|Passion|Shaman|3",
+                "Seance of ferver|Shaman|Shaman|Passion|Shaman|3",
+                "Reciprocal Rage|Blood Mage|Shaman|Shaman|Passion|Shaman|6",
+                "Spirited Resolve||Shaman|Shaman|Passion|Shaman|10",
+                "Blossom of Passion|Shaman|Shaman|Passion|Shaman|14"
+            ],
+            "className": "Shaman",
+            "classSource": "Shaman"
+        },
+        {
+            "name": "Union of the Reaper",
+            "source": "KurtsBookofFuck",
+            "shortName": "Reaper",
+            "subclassFeatures": [
+                "Union of Passion|Shaman|Shaman|Passion|Shaman|3",
+                "Omen of Ones Own|Shaman|Shaman|Passion|Shaman|3",
+                "Already Dead|Shaman|Shaman|Passion|Shaman|3",
+                "Horrific Aura|Blood Mage|Shaman|Shaman|Passion|Shaman|6",
+                "One with the Dead|Blood Mage|Shaman|Shaman|Passion|Shaman|6",
+                "Grim Fate||Shaman|Shaman|Passion|Shaman|10",
+                "Reaper's Release|Shaman|Shaman|Passion|Shaman|14"
+            ],
+            "className": "Shaman",
+            "classSource": "Shaman"
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Union of the Cosmos",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "in a starborns soul rages the power of suns and stars, which they channel to divine fortune and empower their manipulation of the weave. Through the navigational divination of celestial bodies and their conduit connection to them, starborn shaman can draw on celestial power to tranport in the most fantastical of ways. To some, they are a divine gift of power; to others, they represent the feared divinations of a scorched earth."
+            ]
+        },
+        {
+            "name": "Star Gazing",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 3,
+            "entries": [
+                "You have a talent to read people’s fortunes. At 3rd level, as part of a long rest, you consult the stars to read cryptic fortunes of a number of creatures equal to or less than your Shaman Bonus. The exact meaning is hard to decipher in the moment, but reveals itself in the moment later in the day. Once before your next long rest, each effected creature can grant themselves advantage on an ability check, saving throw, or attack roll. Alternatively, they can impose disadvantage on someone elses ability check, saving throw or attack roll."
+            ]
+        },
+        {
+            "name": "Eclipse",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 3,
+            "entries": [
+                "You can slip between the gaps in reality. At 3rd level, as an action on your turn, you can teleport up to 30ft away to a place you can see. You can use this ability a number of times equal to your Shaman Bonus, and regain all expended uses after you finish a long rest."
+            ]
+        },
+        {
+            "name": "Star Struck",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 6,
+            "entries": [
+                "At 6th level, you can empower your spells with the endless stars, granting you the ability to hit multiple enemies at once. If you cast a spell that can only effect one target, you can use your bonus action and choose one additional target of the spell within range.",
+                "Once you have used this feature, you cannot do so until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Cosmic Power",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 10,
+            "entries": [
+                "Your connection to the cosmos has bolstered the rate at which you gain expended magic. Starting at 10th level, once per day when you finish a Short Rest, you can choose expended Spell Slots to recover. The Spell Slots can have a combined level that is equal to or less than a quarter of your Shaman level.",
+                "Alternatively, you can choose a class feature which would typically be regained on a long rest and regain a use of that feature. "
+            ]
+        },
+        {
+            "name": "Supernova",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "You can empower you spells with the force of a supernova. At 14th level, when you cast a spell that would deal damage as part of the initial casting, you can expend one additional spell slot of at least the same Level as the spell cast. When you do so, you can double the damage rolled for that spell. If the second spell slot is of a higher level, normal rules for casting at a higher leel apply. You can choose to use this feature before or after rolling the regular damage of the spell."
+            ]
+        },
+        {
+            "name": "Heart of Fire",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "When you join this union at 3rd level, you gain the Create Bonfire cantrip.",
+                "Additionally, when you deal damage to a creature with this cantrip, you can choose to grant a creature within 10 feet of you or the bonfire temporary hit points equal to half the damage dealt, up to a maximum equal to the damaged creatures maximum hit points prior to taking damage from this spell."
+            ]
+        },
+        {
+            "name": "Greater Rest",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 3,
+            "entries": [
+                "Also at 3rd level, when you take a short rest, you can use your Healing Blossoms feature without expending a use of Channel Nature. You can use this feature a number of times equal to half of your Shaman Bonus."
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 6,
+            "entries": [
+                "At 6th level, while a creature friendly to you is within your Aura, that creature gains the benefits of Half-Cover. "
+            ]
+        },
+        {
+            "name": "Familial Bond",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 10,
+            "entries": [
+                "At 10th level, when a creature within 60 feet of you is reduced to 0 hit points or dies outright, you can use your reaction to banish the spirits you have summoned from your Shamanic Spirits feature and return the creature to 1 hit point.",
+                "Once you have used this feature, you cannot do so again until you finish a short or long rest. "
+            ]
+        },
+        {
+            "name": "Homemade Feast",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Hearth",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 14,
+            "entries": [
+                "At 14th level, you are able to cast Heroes' Feast without requiring any material components. Once you have cast this spell this way, you cannot do so again until you finish a long rest. "
+            ]
+        },
+        {
+            "name": "Healing Hearth",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 14,
+            "entries": [
+                "Also at 14th level, on the first instance where you would roll damage as part of any Shaman spell which deals fire damage, you can choose a creature within the same range as you as the spells range; that creature gains temporary hit points equal to half the total rolled to determine the spells damage."
+            ]
+        },
+        {
+            "name": "Natural Wonders ",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 14,
+            "entries": [
+                "Starting at 3rd level, you learn the Druidcraft cantrip. This does not count against the cantrips you already know.",
+                "Additionally, you gain a swimming and climbing speed equal to your walking speed."
+            ]
+        },
+        {
+            "name": "Fury of the Elements",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "You empower your next strike with the fury of the elements. At 3rd level, when you or your Shamanic Spirits hit a creature with an attack you can inflict an additional 1d6 Bludgeoning, Cold, fire, lightning, thunder or Poison damage (your choice). "
+            ]
+        },
+        {
+            "name": "Extreme Survivor",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "You have become one with your environment. At 6th level you are unaffected by difficult terrain, and the space within your Shamanic Aura is difficult terrain for creatures of your choosing. Additionally, you cannot be affected by extreme heat or cold."
+            ]
+        },
+        {
+            "name": "Hidden Guardian",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "You become the hidden guardian of the wild. At 6th level you cannot be tracked by non-magical means unless you wish to be, and you have advantage on saving throws against divination magic."
+            ]
+        },
+        {
+            "name": "Elemental attunement",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Primeval",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "At 10th level, your insight into the nature of the elements has granted you power over them beyond simple conjuration and evocation. At the end of each long rest, choose one of the following feature from which to benefit. You only gain the benefit of one feature at a time:",
+                "Air. You gain a flying speed of 40 feet.",
+                "Earth. You gain tremorsense within your Shamanic Aura.",
+                "Fire. When you or one of your Elemental Summons makes an attack roll that would deal fire damage, you make a critical hit on a d20 roll of 19 or 20 (before attack modifiers are applied).",
+                "Water. your Healing Blossoms use a d8 instead of a d4."
+            ]
+        },
+        {
+            "name": "Nature’s Wrath",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                "When you strike, you become nature’s wrath incarnate. At 14th level, your damage dealt by your Fury of the Elements ability increases to 2d6."
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "name",
+            "source": "KurtsBookofFuck",
+            "className": "Shaman",
+            "classSource": "Shaman",
+            "subclassShortName": "Cosmos",
+            "subclassSource": "KurtsBookofFuck",
+            "level": 1,
+            "entries": [
+                ""
+            ]
+        },
+        {
+            "name": "Rune Carver",
+            "source": "KurtsBookofFuck",
+            "className": "Blood Mage",
+            "classSource": "Shaman",
+            "subclassShortName": "Rune Carver",
+            "subclassSource": "Shaman",
+            "level": 1,
+            "entries": [
+                "You discovered how to enhance the power of your blood magic using the supernatural magic of runes. The ancient practice of rune magic originated with giants. Skiltgravr (\"rune cutters\") can be found among any type of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant's work carved into a hill or cave, learned of the runes from a traveling sage, or met the giant in person, you studied and adapted the giant's craft. In time, you learned how to carve runes into your body and invoke their magic, ultimately becoming a Runecarver."
+            ]
+        }
+    ],
+    "optionalfeature": [
+        {
+            "name": "Malediction of Agony",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "As a bonus action, you curse a creature that you can see within 30 feet of you to painfully swell until the end of your next turn. For the duration of this curse, the creature has disadvantage on Strength and Dexterity ability checks, and suffers 1d8 necrotic damage if it makes more than one melee or ranged attack during its turn.",
+                "*Amplify.* This effect lasts for 1 minute. At the end of each of its turns, the cursed creature can make a Constitution saving throw. On a success, this effect ends."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of Binding",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "As a bonus action, you can attempt to bind a creature you can see within 30 feet that is no more than one size larger than you. The target must succeed on a Strength saving throw (DC equal to 8 + your proficiency bonus + your Wisdom modifier) or have their speed be reduced to 0 until the end of your next turn.",
+                "*Amplify.* This malediction lasts for 1 minute and can affect a creature regardless of their size. At the end of each of its turns, the affected creature can make another Strength saving throw. On a success, the effect ends."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of Corrosion",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "As a bonus action, a creature you choose within 30 feet of you becomes poisoned for 1 minute. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the effect ends.",
+                "*Amplify.* A creature poisoned by this malediction suffers 1d8 poison damage every time it fails its Constitution saving throw to end this curse at the end of its turn."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of the Eyeless",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "As a bonus action, you magnify the adrenaline in the body of a creature within 30 feet of you, making them susceptible to forceful influence. Until the end of your next turn, all creatures have advantage on Charisma (Intimidation) checks directed at the target creature.",
+                "*Amplify.* The next Wisdom saving throw the target makes before this curse ends has disadvantage. Once you have amplified this blood curse you must finish a long rest before you can amplify it again."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of Fear",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "When a creature you can see within 60 feet that is not immune to blindness makes a weapon attack, you can use your reaction to temporarily blind it, imposing disadvantage on the attack roll.",
+                "*Amplify.*  The next Wisdom saving throw the target makes before this curse ends has disadvantage. Once you have amplified this blood curse you must finish a long rest before you can amplify it again."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of the Marked",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "As a bonus action, you can mark a creature you can see within 60 feet. Until the end of your turn, all bonus damage you deal to the creature with your Sacrificial Magic feature is doubled.",
+                "*Amplify.*  You cause the marked creature to also lose resistance to your bonus damage from Sacrificial Magic until the beginning of your next turn."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of Shielding",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "When a creature you can see casts a spell that requires a Dexterity saving throw, you can use your reaction to deflect the spell. You gain a bonus to the initial saving throw against that spell equal to your Constitution modifier (minimum of 1). This effect is invoked before the saving throw is rolled.",
+                "*Amplify.*  You grant all allies within 5 feet of you this bonus to their saving throw against the triggering spell as well"
+            ],
+            "featureType": [
+                "MA"
+            ]
+        },
+        {
+            "name": "Malediction of Vulnerability",
+            "source": "BloodMage",
+            "page": 3,
+            "entries": [
+                "When a creature you can see within 30 feet is hit by an attack or spell, you can use your reaction to temporarily weaken their resilience against it. Until the end of the turn, the target loses resistance to the damage types of the triggering attack or spell.",
+                "*Amplify.*  The target's resistance is lost until the end of your next turn."
+            ],
+            "featureType": [
+                "MA"
+            ]
+        }
+    ],
+    "classFluff": [
+        {
+            "name": "Blood Mage",
+            "source": "BloodMage",
+            "entries": [
+                {
+                    "type": "section",
+                    "name": "Blood Mage",
+                    "source": "BlodMage",
+                    "page": 1,
+                    "entries": [
+                        "Wizards study a wide variety of arcane spells and rituals in pursuit of greater knowledge and power.  Sorcerers draw upon a wellspring of innate magic available to them because of their exotic heritage. Blood mages carve their will into their own flesh, focusing their desires through offerings of blood.",
+                        {
+                            "type": "entries",
+                            "name": " Forbidden Rites",
+                            "page": 1,
+                            "entries": [
+                                "A wise mage once said 'Magic is the bloodstream of the universe.'",
+                                " To a blood mage this is undeniable truth, and the connection is quickly drawn between the cosmic flow of energy and one's own life essence.",
+                                "Blood mages have no use for spellbooks and ancient lore, nor do they rely on an otherwordly patron or deity to gift them with supernatural powers. Instead they see power as a tool to be used by those with the fortitude to do so."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Creating a Blood Mage",
+                            "page": 1,
+                            "entries": [
+                                "Creating a blood mage character demands a backstory dominated by a thirst for esoteric knowledge and forbidden secrets. What was your first experience with death? How did you learn you had an aptitude for manipulating the Weave with your blood? Did you encounter a magical creature or an ancient tome that gave you your first glimpse at the dark potential of blood magic?",
+                                {
+                                    "type": "entries",
+                                    "name": "Quick Build",
+                                    "page": 1,
+                                    "entries": [
+                                        "You can make a blood mage quickly by following these suggestions. First, Constitution should be your highest ability score, followed by Dexterity or Wisdom. Second, choose the hermit background. Third, choose the {@spell acid splash}, {@spell poison spray}, {@spell spare the dying}, and {@spell vicious mockery} cantrips, along with the 1st-level spells {@spell inflict wounds} and {@spell mage armor}."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
